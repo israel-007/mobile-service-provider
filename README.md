@@ -1,6 +1,6 @@
 # Mobile ISP
 
-Mobile ISP is a PHP project that provides information about a phone number sent to the endpoint. It retrieves details such as the ISP (Internet Service Provider), country information, country dial code, and phone number in international format. Currently, the endpoint supports phone number lookups for Nigeria, Ghana, Egypt and South Africa.
+Mobile ISP is a PHP project that provides information about a phone number sent to the endpoint. It retrieves details such as the ISP (Internet Service Provider), country information, country dial code, and phone number in international format. Currently, the endpoint supports phone number lookups for Nigeria, Ghana, Egypt, and South Africa.
 
 ## Installation
 
@@ -19,7 +19,7 @@ require_once('app/autoload.php');
 // Make a lookup
 $response = Provider::check('your_phone_number_here');
 
-// This methos allows you to specify the country if you can which also improves the processing time
+// This method allows you to specify the country if you can which also improves the processing time
 $response = Provider::get('country name', 'your_phone_number_here');
 
 // Handle the response
@@ -27,7 +27,7 @@ echo $response;
 ?>
 ```
 
-Replace 'your_phone_number_here' with the phone number you want to lookup, and 'country name' with the correct country name (spaces included)
+Replace `your_phone_number_here` with the phone number you want to lookup, and `country name` with the correct country name (spaces included)
 
 The **Provider::check()** and **Provider::get()** method returns a JSON response with all the information needed.
 
