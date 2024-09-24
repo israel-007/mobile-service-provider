@@ -29,7 +29,7 @@ echo $response;
 
 Replace `your_phone_number_here` with the phone number you want to lookup, and `country name` with the correct country name (spaces included)
 
-The **Provider::check()** and **Provider::get()** method returns a JSON response with all the information needed.
+The `Provider::check()` and `Provider::get()` method returns a JSON response with all the information needed.
 
 ## Contribution
 
